@@ -42,6 +42,7 @@
 				"typeProperties": {
 					"waitTimeInSeconds": 1
 				}
+
 			}
 		],
 		"annotations": []
