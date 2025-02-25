@@ -1,0 +1,64 @@
+{
+	"name": "Jsoncustomerdata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "customers.json",
+				"folderPath": "raw",
+				"container": "makadfpractice"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"first_name": {
+					"type": "string"
+				},
+				"last_name": {
+					"type": "string"
+				},
+				"email": {
+					"type": "string"
+				},
+				"phone": {
+					"type": "string"
+				},
+				"address": {
+					"type": "string"
+				},
+				"gender": {
+					"type": "string"
+				},
+				"age": {
+					"type": "integer"
+				},
+				"registered": {
+					"type": "string"
+				},
+				"orders": {
+					"type": "integer"
+				},
+				"spent": {
+					"type": "number"
+				},
+				"job": {
+					"type": "string"
+				},
+				"hobbies": {
+					"type": "string"
+				},
+				"is_married": {
+					"type": "boolean"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

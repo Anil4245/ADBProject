@@ -1,0 +1,74 @@
+{
+	"name": "AzureSqlTable_customer",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureSqlDatabase",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"servername": "mak-adf-sqlserver.database.windows.net",
+				"dbname": "mak-adf-practiceDB"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "first_name",
+				"type": "varchar"
+			},
+			{
+				"name": "last_name",
+				"type": "varchar"
+			},
+			{
+				"name": "email",
+				"type": "varchar"
+			},
+			{
+				"name": "phone",
+				"type": "varchar"
+			},
+			{
+				"name": "address",
+				"type": "varchar"
+			},
+			{
+				"name": "gender",
+				"type": "varchar"
+			},
+			{
+				"name": "age",
+				"type": "varchar"
+			},
+			{
+				"name": "registered",
+				"type": "varchar"
+			},
+			{
+				"name": "orders",
+				"type": "varchar"
+			},
+			{
+				"name": "spent",
+				"type": "varchar"
+			},
+			{
+				"name": "job",
+				"type": "varchar"
+			},
+			{
+				"name": "hobbies",
+				"type": "varchar"
+			},
+			{
+				"name": "is_married",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "customerdata_stg"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

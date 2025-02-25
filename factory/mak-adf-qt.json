@@ -1,0 +1,9 @@
+{
+	"name": "mak-adf-qt",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7155fc90-65c1-4959-92c0-3aa395325054",
+		"tenantId": "3338e9fd-19bc-4958-b120-2ab0dce0c9d5"
+	}
+}
